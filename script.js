@@ -8,7 +8,11 @@ const menu = document.querySelector(".menu");
 // makee a function called 'toggleMenu' that 
 // writes 'working' to the console
 function toggleMenu() {
-    console.log("working");
+    if (menu.classList.contains("active")) {
+        menu.classList.remove("active");
+    } else {
+        menu.classList.add("active");
+    }
 }
 
 // Exercise 3:
