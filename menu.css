@@ -1,3 +1,10 @@
+/* Mobile Menu */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .menu {
     display: flex;
     flex-wrap: wrap;
@@ -28,4 +35,36 @@
 
 .active .item {
     display: block;
+}
+
+.button.secondary {
+    border-bottom: 1px #444 solid;
+}
+
+/* Desktop menu */
+@media screen and (min-width: 960px) {
+    .item {
+        display: inline;
+        width: 100px;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .item.button {
+        order: 10;
+        background-color: blue;
+        padding: 0;
+        margin-right: 1rem;
+    }
+
+    .logo {
+        flex-grow: 100;
+    }
+
+    .toggle {
+        display: none;
+    }
 }
