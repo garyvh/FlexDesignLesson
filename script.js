@@ -18,4 +18,4 @@ function toggleMenu() {
 // Exercise 3:
 // Add an event listener to the toggle element
 // to run the toggleMenu function
-toggle.addEventListener("click", toggleMenu);
+toggle.addEventListener("click", toggleMenu, false);
